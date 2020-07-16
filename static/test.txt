@@ -1,0 +1,2 @@
+this is the file in static foler
+ so only put the files in ststic folder which you have to make public 
