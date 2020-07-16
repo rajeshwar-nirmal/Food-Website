@@ -2,6 +2,7 @@ touch .gitignore
 git config --global user.name rajeswar
 git config --global user.email ""
 git init
+# to just add more in git
 git add .
 git commit -m "Initial commit"
 git status       # just to see
