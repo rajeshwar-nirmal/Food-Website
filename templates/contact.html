@@ -5,6 +5,33 @@ Contact
 {% endblock title %}
 
 {% block body %}
-This is contact block
-{% endblock body %}
+<div class="container px-0 mb-3">
+    <img src="/static/images/contact.jpg" alt="food image" width="1600" height="550" class="d-block w-100 my-0"
+        alt="...">
+</div>
+<div class="container py-4">
+    <h1 class="text-center">Contact Us</h1>
 
+    <form method="post" action="/contact">
+    {% csrf_token %}
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <label for="email">email</label>
+            <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="number" class="form-control" id="phone" name="phone" placeholder="Enter your Phone Number">
+        </div>
+        
+        <div class="form-group">
+            <label for="Desc">Any doubts, suggestions..? We would love to here:)</label>
+            <textarea class="form-control" id="Desc" rows="3" name="Desc"></textarea>
+        </div>
+        <button  class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+{% endblock body %}
